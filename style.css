@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap'); 
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --grayish-Blue: hsl(218, 22%, 67%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: var(--Light-Gray);
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main {
+  background-color: white;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  
+}
+.community-section {
+ padding: 1.25rem;  
+ line-height: 1.4;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.highlighted {
+  color: var(--Bright-Yellow);
+  margin-bottom: 0.5rem;
+}
+.description {
+  color: var(--grayish-Blue);
+  margin-bottom: 0.5rem;
+}
+.join-us {
+ display: flex;
+ line-height: 1.1;
+/* flex-direction: row; default setting  */
+}
+.subscription, .why-us {
+  width: 50%;
+  background-color: var(--cyan);
+  color: white;
+  padding: 1.5rem;
+ 
+}
+
+.monthly-fee {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+.subscription-duration {
+  color: var(--grayish-Blue);
+}
+.short-description {
+ margin: 0.75rem 0;
+}
+.sign-up {
+  color: white;
+  border: none;
+  background-color: var(--Bright-Yellow);
+  width: 95%;
+  padding: 1.2rem ;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.why-us {
+  opacity: 0.7;
+  color: var(--grayish-Blue);
+  font-size: 1rem;
+}
+.why-us h3 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+
+}
+@media  (max-width:600px) {
+  main {
+    width: 90vw;
+  }
+  .join-us {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscription, .why-us {
+    width: 100%;
+  }
+  
+}
